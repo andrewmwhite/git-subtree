@@ -31,7 +31,7 @@ install-doc: git-subtree.1
 doc: git-subtree.1
 
 %.1: %.xml
-	xmlto -m manpage-normal.xsl  man $^
+	xmlto --skip-validation -m manpage-normal.xsl  man $^
 
 %.xml: %.txt
 	asciidoc -b docbook -d manpage -f asciidoc.conf \
