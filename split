@@ -1,0 +1,4 @@
+
+Split from the main git repository (github: gitster/git), tag 'v2.1.2':
+
+  git subtree split --prefix=contrib/subtree --annotate="(git-scm.com) " -b subtree
